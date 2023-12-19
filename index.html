@@ -1,0 +1,82 @@
+<html>
+    <head>
+<title>XanderRP!</title>
+<link rel="icon" type="image/x-icon" href="Assets/ShadPFPCircle.png">
+<link rel="stylesheet" href="MainPage.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <button onclick="topFunction()" id="ButtonToTop" title="Go to top">Top</button>
+        <section id="TitleBar">
+            <h1 id="logo"> 
+                Xander
+            </h1>
+        </section>
+        <section class="navBar">
+
+        </section>
+        <section class="section1">
+            <h1 Style = "color: rgb(199, 199, 199);">About me</h1>
+            <p Style = "color: rgb(199, 199, 199);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, provident consequuntur! Quod doloribus, sint blanditiis officia possimus distinctio iste nihil a, corrupti labore facere neque magnam impedit dicta facilis cupiditate.</p>
+            <img src="Assets/Siblings.jpeg">
+        </section>
+        <section class="section2">
+            <h1 Style = "color: rgb(199, 199, 199); left: 10%;">My Projects</h1>
+            <div class="scroll-container">
+                <div class="container">
+                    <h2>My First Website</h2>
+                    <img src="Assets/ClubSite.png" alt="Project1">
+                    <button class="projectButtons"><a href="https://github.com/xanderrp2/SoftwareClubSite" class="projectLink">View Project</a></button>
+                  </div>
+                  <div class="container">
+                    <h2>Mental Health App</h2>
+                    <img src="Assets/BeWell.JPG" alt="Project2">
+                    <button class="projectButtons"><a href="https://github.com/xanderrp2/BWell" class="projectLink">View Project</a></button>
+                  </div>
+                  <div class="container">
+                    <h2>Trading Strategy Tester</h2>
+                    <img src="Assets/StockTrader.png" alt="Project3">
+                    <button class="projectButtons"><a href="https://github.com/xanderrp2/Favorites/blob/main/StockIntersectStrategy.py" class="projectLink">View Project</a></button>
+                  </div>
+                  <div class="container">
+                    <h2>Data Analysis Program</h2>
+                    <img src="Assets/DataAnalysis.png" alt="Project4">
+                    <button class="projectButtons"><a href="https://github.com/xanderrp2/Data_analysis_programs_for_laClub" class="projectLink">View Project</a></button>
+                  </div>
+              </div>
+        </section>
+        <section class="section3">
+            <h1 Style = "color: rgb(199, 199, 199);">contact me</h1>
+            <p Style = "color: rgb(199, 199, 199);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio, quia beatae possimus laudantium adipisci eveniet enim magnam deleniti consequatur unde eligendi sint assumenda, repellendus iure nisi accusamus dolores aperiam?</p>
+        </section>
+
+          <script>
+            window.onscroll = function() {scrollFunction()};
+            let TopButton = document.getElementById("ButtonToTop");
+            const title = document.getElementById("logo");
+            const navBar = document.getElementById("TitleBar")
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                title.style.fontSize = "15px";
+                title.style.position = "relative";
+                title.style.right = window.innerWidth/2.4;
+                navBar.style.backgroundColor = "#1a1a1a";
+                TopButton.style.display = "block";
+              } else {
+                title.style.fontSize = "25px";
+                title.style.position = "center";
+                title.style.right = 0;
+                navBar.style.backgroundColor = "#7a7a7a";
+                TopButton.style.display = "none";
+              }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+            </script>
+
+    </body>
+</html>
