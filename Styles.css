@@ -39,6 +39,14 @@ body, ul{
   z-index: 4;
 }
 
+#TitleBar #logo{
+  background: linear-gradient(to right, rgb(255, 255, 255), #ff8f8f 35%, #ff00a6);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
 
 #TitleBar #logo{
   color: rgb(255, 254, 254);
@@ -58,14 +66,22 @@ body, ul{
   z-index: 2;
 }
 
-#TitleBar #logo{
-  background: linear-gradient(to right, rgb(255, 255, 255), #ff8f8f 35%, #ff00a6);
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 
+.section1 img{
+  width: 100%;
+  display: block;
 }
-  
+
+.section1 h1{
+  color: rgb(255, 255, 255);
+}
+.section1 p{
+  color: rgb(199, 199, 199);
+  font-size: 100%;
+  display: block;
+  column-width: 1;
+}
+
 
 .section2{
   background: linear-gradient(rgba(0, 0, 0, 10), rgba(35, 164, 164, 0.989));
@@ -74,6 +90,12 @@ body, ul{
   display: block;
   z-index: 3;
 }
+
+
+.section2 h1{
+  position: relative;
+}
+
 
 .section2 h2{
   color: white;
@@ -87,9 +109,6 @@ body, ul{
 
 }
 
-.section2 h1{
-  position: relative;
-}
 
 div.scroll-container {
   background-color: #333;
@@ -149,10 +168,6 @@ div.scroll-container .container {
 
 
 
-.section1 img{
-  width: 100%;
-}
-
 a.projectLink{
   color: white;
   text-decoration: none;
@@ -169,13 +184,19 @@ a.projectLink{
   z-index: 1;
 }
 
-
-.section3 ul, .section3 li{
-  white-space: nowrap;
+.section3 li{
+  width: 25%;
   display: inline-block;
-  margin: 0 auto;
-  padding-right: 25%;
+  font-size: 24px;
 }
+
+.section3 ul{
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -183,7 +204,7 @@ a.projectLink{
   height:fit-content;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
+  border-radius: 80%;
   display: inline;
 }
 

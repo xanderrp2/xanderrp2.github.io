@@ -17,9 +17,13 @@
 
         </section>
         <section class="section1">
-            <h1 Style = "color: rgb(199, 199, 199);">About me</h1>
-            <p Style = "color: rgb(199, 199, 199);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, provident consequuntur! Quod doloribus, sint blanditiis officia possimus distinctio iste nihil a, corrupti labore facere neque magnam impedit dicta facilis cupiditate.</p>
-            <img src="Assets/Siblings.jpeg">
+            <h1>About me</h1>
+            <p >Hello! My name is Xander, I am currently a first year student and varsity athlete at the University of Waterloo (UW) and on my way to completing a Bachelors of Computing and Financial Management (BCFM) through a 5 year co-op program.</p>
+            <div id="Bio" >
+            <p class="column">CFM is a  single degree, double major program. Within CFM I learn not only the valuable theory and hard skills of Computer Science (CS), but also all the important knowledge offered by the Accounting and Financial Management program (AFM). This makes me (along with all my peers in the CFM program) a valuable resource in the world of fintech.<br><br>
+ My passions include coding, swimming, learning, and networking. My dream is to build supportive systems within the world of fintech which eases the process of discovering, analyzing, and investing in various financial markets.</p>
+            <img class="column" src="Assets/Siblings.jpeg">
+          </div>
         </section>
         <section class="section2">
             <h1 Style = "color: rgb(199, 199, 199); left: 10%;">My Projects</h1>
@@ -47,7 +51,8 @@
               </div>
         </section>
         <section class="section3">
-            <h1 Style = "color: rgb(199, 199, 199);">contact me</h1>
+            <h1 Style = "color: rgb(237, 237, 237); display: inline;"><strong>Contact me</strong> <h3 Style = "color: rgb(237, 237, 237); display: inline;">: xanderdrakerp@gmail.com</h3></h1>
+            <br>
             <ul>
             <li><a href="https://www.facebook.com/profile.php?id=100018992500286" class="fa fa-facebook"></a></li>
             <li><a href="https://www.instagram.com/friendlywatergiant/?next=%2F" class="fa fa-instagram"></a></li>
@@ -66,7 +71,7 @@
               if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
                 title.style.fontSize = "15px";
                 title.style.position = "relative";
-                title.style.right = window.innerWidth/2.4;
+                title.style.right = window.innerWidth/2.8;
                 navBar.style.backgroundColor = "#1a1a1a";
                 TopButton.style.display = "block";
               } else {
@@ -79,8 +84,8 @@
             }
 
             function topFunction() {
-                document.body.scrollTop = 0; // For Safari
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
             }
             </script>
 
