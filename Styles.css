@@ -1,4 +1,4 @@
-body{
+body, ul{
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
@@ -77,9 +77,10 @@ body{
 .section2 h2{
   color: white;
   display: inline;
+  opacity: 1;
   position: absolute;
   text-align: center;
-  left: 28%;
+  left: 34%;
   z-index: 2;
   font-size: 120%;
 
@@ -104,7 +105,7 @@ div.scroll-container .container img {
   transition: 0.4s ease;
 }
 
-div.scroll-container .container img:hover {
+div.scroll-container .container img:hover{
   padding: 10px;
   opacity: 1;
   position: relative;
@@ -167,7 +168,12 @@ a.projectLink{
 }
 
 
-/* Style all font awesome icons */
+.section3 ul, .section3 li{
+  white-space: nowrap;
+  display: inline-block;
+  margin: 0 auto;
+  padding-right: 25%;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -176,23 +182,21 @@ a.projectLink{
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+  display: inline;
 }
 
 
-/* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
 
-/* Facebook */
+
 .fa-facebook {
   background: #3B5998;
   color: white;
 }
 
-/* Twitter */
 .fa-twitter {
   background: #55ACEE;
   color: white;
