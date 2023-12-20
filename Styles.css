@@ -1,168 +1,215 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    background: rgb(0, 0, 0);
-    z-index: -10;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: rgb(0, 0, 0);
+  z-index: -10;
 }
 
 #ButtonToTop {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  
-  #ButtonToTop:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#ButtonToTop:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
 
 #TitleBar{
-    transition: 0.8s;
-    background-color: #676767;
-    padding: 20px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 4;
+  transition: 0.8s;
+  background-color: #676767;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
 }
 
 
 #TitleBar #logo{
-    color: rgb(255, 254, 254);
-    position: center;
-    border: 8px solid white;
-    border-radius: 30px;
-    display: inline;
-    padding: 6px 12px;
-    transition: 0.6s;
+  color: rgb(255, 254, 254);
+  position: center;
+  border: 8px solid white;
+  border-radius: 30px;
+  display: inline;
+  padding: 6px 12px;
+  transition: 0.6s;
 }
 
 .section1{
-    background: linear-gradient(rgba(0, 0, 0, 10), rgba(35, 164, 164, 0.989));
-    padding: 50px 100px;
-    margin-bottom: 100 auto;
-    display: block;
-    z-index: 2;
+  background: linear-gradient(rgba(0, 0, 0, 10), rgba(35, 164, 164, 0.989));
+  padding: 50px 100px;
+  margin-bottom: 100 auto;
+  display: block;
+  z-index: 2;
 }
 
 #TitleBar #logo{
-    background: linear-gradient(to right, rgb(255, 255, 255), #ff8f8f 35%, #ff00a6);
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, rgb(255, 255, 255), #ff8f8f 35%, #ff00a6);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 
 }
-    
+  
 
 .section2{
-    background: linear-gradient(rgba(0, 0, 0, 10), rgba(35, 164, 164, 0.989));
-    padding: auto 100px;
-    margin-bottom: 100 auto;
-    display: block;
-    z-index: 3;
+  background: linear-gradient(rgba(0, 0, 0, 10), rgba(35, 164, 164, 0.989));
+  padding: auto 100px;
+  margin-bottom: 100 auto;
+  display: block;
+  z-index: 3;
 }
 
 .section2 h2{
-    color: white;
-    display: inline;
-    position: absolute;
-    text-align: center;
-    left: 28%;
-    z-index: 10;
-    font-size: 3vw;
+  color: white;
+  display: inline;
+  position: absolute;
+  text-align: center;
+  left: 28%;
+  z-index: 2;
+  font-size: 2cap;
 
-    
+  
 }
 
 .section2 h1{
-    position: relative;
+  position: relative;
 }
 
 div.scroll-container {
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 20px;
-  }
-  
-  div.scroll-container .container img {
-    padding: 10px;
-    width: 50%;
-    height: 50%;
-    opacity: 0.7;
-    transition: 0.4s ease;
-  }
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 20px;
+}
 
-  div.scroll-container .container img:hover {
-    padding: 10px;
-    opacity: 1;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    cursor: pointer;
-    top: -3px;
-    left: 3px;
+div.scroll-container .container img {
+  padding: 10px;
+  width: 30cap;
+  height:30cap;
+  opacity: 0.7;
+  transition: 0.4s ease;
+}
 
-  }
+div.scroll-container .container img:hover {
+  padding: 10px;
+  opacity: 1;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  top: -3px;
+  left: 3px;
 
-  div.scroll-container .container img:active{
-    transform: rotateY(180deg);
-    opacity: 0;
-  }
+}
 
-  div.scroll-container .container {
-    display: inline;
-    position: relative;
-    width: 50%;
-  }
+div.scroll-container .container img:active{
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+div.scroll-container .container {
+  display: inline;
+  position: relative;
+  width: 50%;
+}
 
 
 
- .projectButtons {
-    position: absolute;
-    display: inline;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
+.projectButtons {
+  position: absolute;
+  display: inline;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 
 
 .section1 img{
-    width: 100%;
+  width: 100%;
 }
 
 a.projectLink{
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 
 
 
 .section3{
-    background: rgb(0, 0, 0);
-    padding: 50px 100px;
-    margin-bottom: 100 auto;
-    display: block;
-    z-index: 1;
+  background: rgb(0, 0, 0);
+  padding: 50px 100px;
+  margin-bottom: 100 auto;
+  display: block;
+  z-index: 1;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: fit-content;
+  height:fit-content;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: linear-gradient(to right, rgb(78, 91, 241), #ff8f8f 35%, #ff00a6);
+  color: white;
+}
+
+.fa-linkedin {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: #454545;
+  color: white;
 }
