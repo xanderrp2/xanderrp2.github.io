@@ -1,241 +1,273 @@
-body, ul{
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-  background: rgb(0, 0, 0);
-  z-index: -10;
-  overflow-x: hidden;
+body,
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: rgb(0, 0, 0);
+    z-index: -10;
+    overflow-x: hidden;
 }
 
 #ButtonToTop {
-  display: none; 
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: red; 
-  color: white; 
-  cursor: pointer; 
-  padding: 15px; 
-  border-radius: 10px; 
-  font-size: 18px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
 }
 
 #ButtonToTop:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #555;
+    /* Add a dark-grey background on hover */
 }
 
-#TitleBar{
-  transition: 0.8s;
-  background-color: #676767;
-  padding: 20px 0;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 4;
+#TitleBar {
+    transition: 0.8s;
+    background-color: #676767;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
 }
 
-#TitleBar #logo{
-  background: linear-gradient(to right, rgb(255, 255, 255), #ff8f8f 35%, #ff00a6);
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+#TitleBar #logo {
+    background: linear-gradient(to right, rgb(255, 255, 255), #ff8f8f 35%, #ff00a6);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-}
-
-
-#TitleBar #logo{
-  color: rgb(255, 254, 254);
-  position: center;
-  border: 8px solid white;
-  border-radius: 30px;
-  display: inline;
-  padding: 6px 12px;
-  transition: 0.6s;
-}
-
-.section1{
-  background: linear-gradient(rgba(0, 0, 0, 10), rgba(35, 164, 164, 0.989));
-  padding: 50px 100px;
-  margin-bottom: 100 auto;
-  display: block;
-  z-index: 2;
 }
 
 
-.section1 img{
-  width: 100%;
-  display: block;
+#TitleBar #logo {
+    color: rgb(255, 254, 254);
+    position: center;
+    border: 8px solid white;
+    border-radius: 30px;
+    display: inline;
+    padding: 6px 12px;
+    transition: 0.6s;
 }
 
-.section1 h1{
-  color: rgb(255, 255, 255);
-}
-.section1 p{
-  color: rgb(199, 199, 199);
-  font-size: 100%;
-  display: block;
-  column-width: 1;
-}
-
-
-.section2{
-  background: linear-gradient(rgba(0, 0, 0, 10), rgba(35, 164, 164, 0.989));
-  padding: auto 100px;
-  margin-bottom: 100 auto;
-  display: block;
-  z-index: 3;
+/* Section 1 ------------------------------------------------------ */
+.section1 {
+    background: linear-gradient(rgba(0, 0, 0, 10), rgba(35, 164, 164, 0.989));
+    padding: 50px 100px;
+    margin-bottom: 100 auto;
+    display: block;
+    z-index: 2;
+    overflow-x: hidden;
 }
 
 
-.section2 h1{
-  position: relative;
+.section1 img {
+    width: 100%;
+    display: block;
+}
+
+.section1 h1 {
+    color: rgb(255, 255, 255);
+}
+
+.section1 p {
+    color: rgb(199, 199, 199);
+    font-size: 100%;
+    display: block;
+    column-width: 1;
 }
 
 
-.section2 h2{
-  color: white;
-  display: inline;
-  opacity: 1;
-  position: absolute;
-  text-align: center;
-  left: 34%;
-  z-index: 2;
-  font-size: 120%;
+
+
+
+
+
+
+/* Section 2 ------------------------------------------------------ */
+
+.section2 {
+    overflow-x: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 10), rgba(35, 164, 164, 0.989));
+    padding: auto 100px;
+    margin-bottom: 100 auto;
+    display: block;
+    z-index: 3;
+}
+
+
+.section2 h1 {
+    position: relative;
+}
+
+
+.section2 .projectTitle {
+    color: white;
+    display: inline;
+    opacity: 1;
+    position: absolute;
+    left: 38%;
+    z-index: 2;
+    font-size: 120%;
 
 }
 
 
 div.scroll-container {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 20px;
-  height: 43%;
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding-top: 2%;
+    padding-left: 2%;
+    height: 43%;
 }
 
 div.scroll-container .container img {
-  padding: 10px;
-  width: auto;
-  height: 90%;
-  opacity: 0.7;
-  transition: 0.4s ease;
+    width: auto;
+    height: 100%;
+    opacity: 0.6;
+    transition: 0.4s ease;
 }
 
-div.scroll-container .container img:hover{
-  padding: 10px;
-  opacity: 1;
-  position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
-  top: -3px;
-  left: 3px;
+div.scroll-container .container img:hover {
+    padding: 10px;
+    opacity: 1;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 
-}
-
-div.scroll-container .container img:active{
-  transform: rotateY(180deg);
-  opacity: 0;
 }
 
 div.scroll-container .container {
-  display: inline;
-  position: relative;
-  width: 50%;
+    display: inline;
+    position: relative;
+    width: 50%;
+}
+
+.imageButtons {
+    padding: 10px;
+    width: auto;
+    height: 90%;
+    opacity: 0.7;
+    transition: 0.4s ease;
+    background: none;
 }
 
 
+div.card-back{
+    display: inline;
+    opacity: 0;
+    position: absolute;
+    color: white;
+    left: 30%;
+}
 
 .projectButtons {
-  position: absolute;
-  display: inline;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+    position: absolute;
+    display: inline;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 
 
-a.projectLink{
-  color: white;
-  text-decoration: none;
+a.projectLink {
+    color: white;
+    text-decoration: none;
 }
 
 
 
 
-.section3{
-  background: rgb(0, 0, 0);
-  padding: 50px 100px;
-  margin-bottom: 100 auto;
-  display: block;
-  z-index: 1;
+
+
+
+
+
+
+
+
+/* Section 3 ------------------------------------------------------ */
+.section3 {
+    overflow-x: hidden;
+    background: rgb(0, 0, 0);
+    padding: 50px 100px;
+    margin-bottom: 100 auto;
+    display: block;
+    z-index: 1;
 }
 
-.section3 li{
-  width: 25%;
-  display: inline-block;
-  font-size: 24px;
+.section3 li {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
 }
 
-.section3 ul{
-  white-space: nowrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
+.section3 ul {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: fit-content;
-  height:fit-content;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 80%;
-  display: inline;
+    padding: 20px;
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 80%;
+    display: inline;
 }
 
 
 .fa:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+    background: #55ACEE;
+    color: white;
 }
 
 .fa-instagram {
-  background: linear-gradient(to right, rgb(78, 91, 241), #ff8f8f 35%, #ff00a6);
-  color: white;
+    background: linear-gradient(to right, rgb(78, 91, 241), #ff8f8f 35%, #ff00a6);
+    color: white;
 }
 
 .fa-linkedin {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
 }
 
 .fa-github {
-  background: #454545;
-  color: white;
+    background: #454545;
+    color: white;
 }
