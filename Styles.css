@@ -113,15 +113,16 @@ ul {
 
 .section2 .projectTitle {
     color: white;
-    display: inline;
-    opacity: 1;
     position: absolute;
-    left: 38%;
+    display: inline-block;
+    margin: auto auto;
+    margin-top: 10%;
+    text-align: center;
+    width: 100%;
     z-index: 2;
     font-size: 120%;
 
 }
-
 
 div.scroll-container {
     background-color: #333;
