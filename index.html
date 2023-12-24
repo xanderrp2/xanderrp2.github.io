@@ -4,40 +4,47 @@
   <title>XanderRP!</title>
   <link rel="icon" type="image/x-icon" href="Assets/ShadPFPCircle.png">
   <link rel="stylesheet" href="Styles.css">
+  <!-- Styles used for the content buttons in section 3 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
+  <!-- This button is the "Top" button which appears in the bottom  right of the screen after you scroll down -->
   <button onclick="topFunction()" id="ButtonToTop" title="Go to top">Top</button>
+
+  <!-- Content contained within this section relates to the main header of the page -->
   <section id="TitleBar">
     <h1 id="logo">
       Xander
     </h1>
   </section>
-  <section class="navBar">
 
-  </section>
+  <!-- Content within is related to the content of section 1 (aka, the first visable section of the website) -->
   <section class="section1">
     <h1>About me</h1>
     <p>Hello! My name is Xander, I am (the one in pink) currently a first year student and varsity athlete at the
       University of Waterloo (UW) and on my way to completing a Bachelors of Computing and Financial Management (BCFM)
       through a 5 year co-op program.</p>
-    <div id="Bio">
-      <p class="column">CFM is a single degree, double major program. Within CFM I learn not only the valuable theory
-        and hard skills of Computer Science (CS), but also all the important knowledge offered by the Accounting and
-        Financial Management program (AFM). This makes me (along with all my peers in the CFM program) a valuable
-        resource in the world of fintech.<br><br>
-        My passions include coding, swimming, learning, and networking. My dream is to build supportive systems within
-        the world of fintech which eases the process of discovering, analyzing, and investing in various financial
-        markets.</p>
-      <img class="column" src="Assets/Siblings.jpeg">
-    </div>
+    <p>CFM is a single degree, double major program. Within CFM I learn not only the valuable theory
+      and hard skills of Computer Science (CS), but also all the important knowledge offered by the Accounting and
+      Financial Management program (AFM). This makes me (along with all my peers in the CFM program) a valuable
+      resource in the world of fintech.<br><br>
+      My passions include coding, swimming, learning, and networking. My dream is to build supportive systems within
+      the world of fintech which eases the process of discovering, analyzing, and investing in various financial
+      markets.</p>
+    <img src="Assets/Siblings.jpeg">
   </section>
+  <!-- Content within is related to the content of section 2 (The section containing projects) -->
   <section class="section2">
     <h1 Style="color: rgb(199, 199, 199); left: 10%;">My Projects</h1>
+
+    <!-- Content (container) within is displayed on a x-axis scrollable feild -->
     <div class="scroll-container">
+
+      <!-- Each container holds the information for an individual project -->
       <div class="container">
+        <!-- Card-Back stores the information for skills used in the project. (Visable upon clicking directly on an image) -->
         <div class="card-back">
           <br>
           <h2> Skills Used</h2>
@@ -48,6 +55,7 @@
           </ul>
         </div>
         <h2 class="projectTitle">This Website</h2>
+        <!-- Images are placed ontop of buttons which allows them to be related to a function -->
         <button class="imageButtons" onclick="imagebutton(0)"><img src="Assets/ThisWebsite.png" alt="Project1"></button>
         <button class="projectButtons"><a href="https://github.com/xanderrp2/xanderrp2.github.io"
             class="projectLink">View Project</a></button>
@@ -91,7 +99,6 @@
             <li> Pandas </li>
             <li> Databases </li>
             <li> Matplotlib </li>
-            <li> Pandas </li>
             <li> Numpy </li>
           </ul>
         </div>
@@ -134,12 +141,15 @@
             class="projectLink">View Project</a></button>
       </div>
   </section>
+
+  <!-- Content within is related to the content of section 3 (the section containing contact information) -->
   <section class="section3">
     <h1 Style="color: rgb(237, 237, 237); display: inline;"><strong>Contact me</strong>
       <h3 Style="color: rgb(237, 237, 237); display: inline;">: xanderdrakerp@gmail.com</h3>
     </h1>
     <br>
     <ul>
+      <!-- Each contact button is related to a unique class for the ability to individualiza the icons -->
       <li><a href="https://www.facebook.com/profile.php?id=100018992500286" class="fa fa-facebook"></a></li>
       <li><a href="https://www.instagram.com/friendlywatergiant/?next=%2F" class="fa fa-instagram"></a></li>
       <li><a href="https://www.linkedin.com/in/alexander-rutherford-parish-360337243/" class="fa fa-linkedin"></a></li>
@@ -148,14 +158,21 @@
   </section>
 
   <script>
+    // function which is called whenever a scroll occurs 
     window.onscroll = function () { scrollFunction() };
+
+    //These elements are unique instances
     var TopButton = document.getElementById("ButtonToTop");
     const title = document.getElementById("logo");
     const navBar = document.getElementById("TitleBar")
+
+    // We call these objects by class name since there are multiple instances of them
     const projectBut = document.getElementsByClassName("imageButtons")
     const backs = document.getElementsByClassName("card-back")
     let counter = 0;
 
+
+    //Scroll function dictates what happens once the user has scrolled past a specific point
     function scrollFunction() {
       if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         title.style.fontSize = "15px";
@@ -172,6 +189,7 @@
       }
     }
 
+    //imagebutton dicates what happens when a project image is clicked on
     function imagebutton(number) {
       if (counter == 0) {
         counter = 1;
@@ -181,11 +199,12 @@
         counter = 0;
         projectBut[number].style.opacity = 0.7;
         backs[number].style.opacity = 0;
-      
+
       }
     }
 
 
+    //Function related to the top button
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
